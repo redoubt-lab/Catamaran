@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background"
+                android:padding="10dp"
+                android:text="Configs"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="26sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <android.widget.LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.widget.LinearLayout
+                        android:id="@+id/console"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="General"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Client ID"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/client_id_general_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Rules"
+                            android:textAlignment="center"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Device Serial Number"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_serial_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="GPS Coordinate"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_gps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="SSID"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_ssid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="BSSID"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_bssid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="IMEI"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_imei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Phone Number"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Email"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="AAID"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_aaid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="Mac Address"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_mac_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="IPv4"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_IPv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="IPv6"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+
+                        <EditText
+                            android:id="@+id/rule_IPv6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/cardview_dark_background"></EditText>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layoutDirection="rtl"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/saveConfigButton"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Save" />
+                            <Button
+                                android:id="@+id/autoFillOut"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Auto Fill Out" />
+                        </LinearLayout>
+
+                    </android.widget.LinearLayout>
+                </android.widget.LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </android.widget.LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
