@@ -20,7 +20,7 @@ This toolchain is designed to automatically reconstruct and analyze logcat logs 
 It enables researchers and security analysts to identify what information apps are logging, detect whether PII (Personally Identifiable Information) may be exposed, and understand which libraries or packages are responsible for printing such data.
 
 
-**➡️ For detailed setup, configuration, and execution steps, please see: `static_analysis/README.md`**
+**➡️ For detailed setup, configuration, and execution steps, please see: [README.md](https://github.com/redoubt-lab/Catamaran/blob/main/static_analysis/README.md)**
 
 ### Dynamic Analysis
 
@@ -28,7 +28,7 @@ This toolchain is designed for the dynamic analysis of Android applications, foc
 
 It operates by running a low-level monitoring program (`log-monitor`) on a rooted device, which uses rules provided by a companion Android application (`android-app`) to detect and flag specific behaviors.
 
-**➡️ For detailed environment setup, compilation, and execution guides, please see: `dynamic_analysis/README.md`**
+**➡️ For detailed environment setup, compilation, and execution guides, please see: [README.md](https://github.com/redoubt-lab/Catamaran/blob/main/dynamic_analysis/README.md)**
 
 ## Citation
 
